@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    border-top: 3px solid #2d8b2d;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer p:first-child {
+    font-weight: 700;
+    color: #ffcc00;
+}
