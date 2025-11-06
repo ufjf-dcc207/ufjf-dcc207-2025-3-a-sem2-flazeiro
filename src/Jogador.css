@@ -1,0 +1,74 @@
+.jogador {
+  width: 180px;
+  height: 250px;
+  background: linear-gradient(180deg, #1b1b1b 0%, #2a2a2a 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jogador:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.nome {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.posicao {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffcc00;
+}
+
+.nota {
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-align: center;
+  color: #4cff4c;
+  margin-top: 60px;
+}
+
+
+.precoJogador {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 6px 0;
+  color: #00c8ff;
+  margin-bottom: 8px;
+}
+
+.uniforme {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+
+.nota.alta { color: #4cff4c; }
+.nota.baixa { color: #ff4444; }
+
