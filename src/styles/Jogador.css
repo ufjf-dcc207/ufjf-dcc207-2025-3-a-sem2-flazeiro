@@ -1,9 +1,10 @@
 .jogador {
-  width: 180px;
-  height: 260px;
-  background: linear-gradient(180deg, #1b1b1b 0%, #2a2a2a 100%);
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  width: 160px;
+  height: 220px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  border: 2px solid #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -11,8 +12,8 @@
   align-items: center;
   font-family: "Poppins", sans-serif;
   position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden; 
+  transition: transform 0.2s, border-color 0.2s;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -33,8 +34,8 @@
 }
 
 .jogador:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3px);
+  border-color: #00d9ff;
 }
 
 
@@ -42,11 +43,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 12px;
+  padding: 10px;
 }
 
 .nome {
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 768px) {
@@ -67,7 +69,8 @@
 
 .posicao {
   font-weight: 600;
-  color: #ffcc00;
+  font-size: 0.75rem;
+  color: #00d9ff;
 }
 
 .meio {
@@ -89,12 +92,12 @@
 }
 
 .precoJogador {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #00c8ff;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 6px 14px;
+  color: #00d9ff;
+  background: rgba(0, 217, 255, 0.1);
+  border-radius: 6px;
+  padding: 6px 12px;
 }
 
 .notaFaixa {
@@ -103,17 +106,16 @@
   left: 0;
   width: 100%;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.85rem;
   color: #fff;
-  padding: 6px 0;
-  transform: skew(-10deg);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
 }
 
 .notaFaixa.verde {
-  background: linear-gradient(90deg, #00b33c, #00e65c);
+  background: #00b341;
 }
 
 .notaFaixa.vermelha {
-  background: linear-gradient(90deg, #cc0000, #ff3333);
+  background: #e63946;
 }
