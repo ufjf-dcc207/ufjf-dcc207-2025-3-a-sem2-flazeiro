@@ -71,6 +71,20 @@ function App() {
         <section className="hero">
           <h2>Flazeiro FC</h2>
         </section>
+        <section className="stats">
+          <div className="stat-card">
+            <h3>Pontuação Total</h3>
+            <p className="stat-value">{pontuacaoTotal.toFixed(1)}</p>
+          </div>
+          <div className="stat-card">
+            <h3>Valor do Time</h3>
+            <p className="stat-value">{valorTotal.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</p>
+          </div>
+          <div className="stat-card">
+            <h3>Patrimônio</h3>
+            <p className="stat-value">{patrimonio.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</p>
+          </div>
+        </section>
         <div className="campo-container">
           <Campo>
             <div style={{display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap'}}>
@@ -118,20 +132,7 @@ function App() {
           <ListaJogadores jogadores={jogadoresTitulares} />
         </div>
         <Banco jogadores={jogadoresReservas} onTrocar={trocarJogador} />
-        <section className="stats">
-          <div className="stat-card">
-            <h3>Pontuação Total</h3>
-            <p className="stat-value">{pontuacaoTotal.toFixed(1)}</p>
-          </div>
-          <div className="stat-card">
-            <h3>Valor do Time</h3>
-            <p className="stat-value">{valorTotal.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</p>
-          </div>
-          <div className="stat-card">
-            <h3>Patrimônio</h3>
-            <p className="stat-value">{patrimonio.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</p>
-          </div>
-        </section>
+        
         
       </main>
       <Footer />
