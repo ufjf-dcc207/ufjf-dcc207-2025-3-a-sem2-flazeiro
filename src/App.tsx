@@ -5,6 +5,7 @@ import Campo from './components/Campo'
 import Jogador from './components/Jogador'
 import ListaJogadores from './components/ListaJogadores'
 
+
 function App() {
   const jogadores = [
     { posicao: 'GOL', nome: 'Cássio', nota: 7.2, preco: 6.8 },
