@@ -20,6 +20,12 @@ function App() {
     { posicao: 'ATA', nome: 'Juninho Xé', nota: 7.0, preco: 8.3 }
   ];
 
+  const reservas =[
+    {posicao: 'GOL', nome:'Rossi', nota:8.9,preco:7.1}
+    {posicao: 'ZAG', nome:'Leo Pereira', nota:7.0,preco:7.3}
+    {posicao: 'MEI', nome:'Jorginho', nota:8.5,preco:8.9}
+    {posicao: 'ATA', nome:'Gabigol', nota:7.5,preco:7.7} 
+   ];
   const pontuacaoTotal = jogadores.reduce((total, jogador) => total + jogador.nota, 0);
   const valorTotal = jogadores.reduce((total, jogador) => total + jogador.preco, 0);
   const patrimonio = 140.0;
